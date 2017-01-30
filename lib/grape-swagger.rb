@@ -128,13 +128,10 @@ module Grape
               output
             end
 
-            desc 'Swagger compatible API description for specific API', :params => {
-              "name" => {
-                :desc     => "Resource name of mounted API",
-                :type     => "string",
-                :required => true
-              }
-            }
+            desc 'Swagger compatible API description for specific API'
+            params do
+              requires :name, type: String, desc: 'Resource name of the mounted API'
+            end
             get "#{@@mount_path}/:name" do
               header['Access-Control-Allow-Origin']   = '*'
               header['Access-Control-Request-Method'] = '*'
