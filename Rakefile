@@ -25,6 +25,13 @@ Jeweler::Tasks.new do |gem|
 end
 Jeweler::RubygemsDotOrgTasks.new
 
+# https://stackoverflow.com/questions/35893584/nomethoderror-undefined-method-last-comment-after-upgrading-to-rake-11
+module TempFixForRakeLastComment
+  def last_comment
+    last_description
+  end 
+end
+Rake::Application.send :include, TempFixForRakeLastComment
 
 
 Bundler::GemHelper.install_tasks
