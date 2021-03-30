@@ -61,7 +61,7 @@ GEM
     json (1.8.6)
     json (1.8.6-java)
     jwt (2.2.1)
-    kramdown (2.3.0)
+    kramdown (2.3.1)
       rexml
     kramdown-parser-gfm (1.1.0)
     method_source (0.8.2)
@@ -135,7 +135,7 @@ DEPENDENCIES
   grape (~> 0.16.0)
   grape-entity (>= 0.3.0)
   jeweler (~> 1.8.8)
-  kramdown (>= 2.3.0)
+  kramdown (>= 2.3.1)
   kramdown-parser-gfm (>= 1.0.0)
   pry
   pry-byebug

@@ -5,7 +5,7 @@ source "http://rubygems.org"
 
 gem 'grape', '~> 0.16.0'
 gem 'grape-entity', '>= 0.3.0'
-gem 'kramdown', '>= 2.3.0'
+gem 'kramdown', '>= 2.3.1'
 gem 'kramdown-parser-gfm', '>= 1.0.0'
 
 # Add dependencies to develop your gem here.
